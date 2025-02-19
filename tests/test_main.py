@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add the app directory to sys.path
+sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
+
 from fastapi.testclient import TestClient
 from app.main import app
 
